@@ -49,6 +49,27 @@ Host file found. Initiating check...
 - Bash shell
 - `ping` utility available on your system
 
+## Future Scope
+
+The following enhancements are planned or suggested for future versions:
+
+- **Parallelization:** Speed up host checks by pinging multiple hosts in parallel.
+- **Logging:** Save results to a log file with timestamps for auditing and troubleshooting.
+- **Summary Report:** Display a summary at the end, showing total hosts checked and how many are UP or DOWN.
+- **Customizable Hosts File:** Allow specifying the hosts file as a command-line argument.
+- **Configurable Ping Options:** Enable users to set the number of pings and timeout via arguments or environment variables.
+- **Host Comment Support:** Ignore lines starting with `#` or blank lines in the hosts file.
+- **Email/Notification Integration:** Optionally send notifications if any host is DOWN.
+- **IPv6 Support:** Add support for IPv6 addresses using `ping6`.
+- **Verbose/Quiet Modes:** Add flags for more or less detailed output.
+- **Dependency Checks:** Ensure required commands like `ping` are available before running.
+- **Web Dashboard:** Visualize host status in a web UI.
+- **Integration with Monitoring Tools:** Export results to monitoring systems like Prometheus or Nagios.
+- **Scheduling:** Support running as a scheduled job (e.g., via cron) and alert on status changes.
+- **Auto-remediation:** Trigger scripts or actions automatically if a host is detected as down.
+
+Contributions and suggestions are welcome!
+
 ## License
 
 MIT License
